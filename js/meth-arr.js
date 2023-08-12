@@ -66,24 +66,59 @@ const obj = {
 const memoizeLodash = _.memoize(_.values);
 console.log(memoizeLodash(obj));
 
-// #10 Method:
+// #10 Method: isArray
+const isArrayLodash = _.isArray({
+  a: 10,
+  b: 20,
+});
+console.log(isArrayLodash);
 
-// #11 Method:
+// #11 Method: words
+const wordsLodash = _.words(
+  "Julia, Tatiana, Senya, Illya, Michael, Ruslan, Yakov"
+);
+console.log(wordsLodash);
 
-// #12 Method:
+// #12 Method: truncate
+const truncateLodash = _.truncate("hdhjjeiixnwnsnmkd", {
+  length: 10,
+});
+console.log(truncateLodash);
 
-// #13 Method:
+// #13 Method: repeat
+const repeatLodash = _.repeat([1, 2, 3, ""], 3);
+console.log(repeatLodash);
 
-// #14 Method:
+// #14 Method: toString
+const toStringLodash = _.toString([1, 2, 3, null, undefined]);
+console.log(toStringLodash);
 
-// #15 Method:
+// #15 Method: sample
+const sampleLodash = _.sample([482, 584, 194, 195, 1048, 5619, 808]);
+console.log(sampleLodash);
 
-// #16 Method:
+// #16 Method: fromPairs
+const fromPairsLodash = _.fromPairs([
+  ["a", 5],
+  ["b", 10],
+  ["c", 100],
+]);
+console.log(fromPairsLodash);
 
-// #17 Method:
+// #17 Method: flattenDepth
+const arr3 = [1, 2, [3, 4, [5, 6, 7, ['hello', 'buy']], 8, 9], 10];
+const flattenDepthLodash = _.flattenDepth(arr3, 2);
+console.log(flattenDepthLodash);
 
-// #18
+// #18 Method: sum
+const sumLodash = _.sum([92, 735, 134, 863, 531, 8562, 927]);
+console.log(sumLodash);
 
-// #19
+// #19 Method: multiply
+const multiplyLodash = _.multiply(34, 34);
+console.log(multiplyLodash);
 
-// #20
+// #20 Method: fill
+const arr4 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const fillLodash = _.fill(arr4, 'helo');
+console.log(fillLodash);
